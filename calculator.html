@@ -4,9 +4,15 @@
 <meta charset="UTF-8">
 <title>Calculator</title>
 <script type="text/javascript">
+
 function square () {
 	var num = document.getElementById("n1");
-	num.value = num.value*num.value;
+	num.value = num.value*num.value;}
+	
+
+function inverse() {
+	var num = document.getElementById("n1");
+	num.value = 1/ num.value;
 	
 	}
 
@@ -18,7 +24,11 @@ function square () {
 
 Number:
 <input type="text" id="n1" onclick="empty()"><p></p>
+
 <button onClick="square ()">x<sup>2</sup></button>
+
+<button onClick="inverse()">1/x</button>
+
 
 </body>
 
